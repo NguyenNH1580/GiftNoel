@@ -1,0 +1,18 @@
+body {
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff;
+    user-select: none;
+    pointer-events: none;
+    z-index: 9999;
+    animation: snow-fall linear infinite;
+}
+
+@keyframes snow-fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
