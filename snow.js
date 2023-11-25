@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const numberOfSnowflakes = 100;
+    const numberOfSnowflakes = 50;
 
     for (let i = 0; i < numberOfSnowflakes; i++) {
         createSnowflake();
