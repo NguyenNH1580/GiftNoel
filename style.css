@@ -366,7 +366,7 @@ body {
 }
 
 .card__header {
-  background-image: url("../pexels-petricaragea-alexandru-4562937.jpg");
+  background-image: url("./pexels-petricaragea-alexandru-4562937.jpg");
   background-size: cover;
   position: absolute;
   z-index: 1;
