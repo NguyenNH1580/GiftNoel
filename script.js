@@ -1,7 +1,9 @@
 // gift box
 function handleBoxClick() {
     var boxGifts = document.querySelector('.box');
+    var flashCard = document.querySelector('.cards');
     boxGifts.style.display = 'none';
+    flashCard.style.display = 'block';
     playMusic();
 }
 
