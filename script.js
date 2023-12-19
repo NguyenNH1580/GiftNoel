@@ -8,7 +8,7 @@ function handleBoxClick() {
 }
 
 function playMusic() {
-    var audio = new Audio("Justin-Bieber-All-I-Want-For-Christmas-Is-You-ur.mp3");
+    var audio = new Audio("I-Want-For-Christmas-Is-You.mp3");
     if (audio.paused) {
         audio.play();
     }
