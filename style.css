@@ -368,9 +368,8 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
     position: relative;
     width: 95%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
-    margin-top: 10%;
     border-radius: 5px;
 }
 
