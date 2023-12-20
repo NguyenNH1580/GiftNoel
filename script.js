@@ -1,12 +1,17 @@
 // gift box
 const box = document.querySelector(".box");
-box.addEventListener('click', e => {
-  var boxGifts = document.querySelector('.box');
-  var flashCard = document.querySelector('.cards');
-  boxGifts.style.display = 'none';
-  flashCard.style.display = 'block';
-  // playMusic();
-})
+box.addEventListener('click', () => {
+    var boxGifts = document.querySelector('.box');
+    var flashCard = document.querySelector('.cards');
+
+    // Ẩn hộp quà và hiển thị thẻ flash
+    boxGifts.style.opacity = 0;
+    boxGifts.style.transform = "scale(0.8)";
+    flashCard.style.opacity = 1;
+    flashCard.style.transform = "scale(1)";
+
+    playMusic();
+});
 
 //flash card
 const cardWrapper = document.querySelector(".cards");

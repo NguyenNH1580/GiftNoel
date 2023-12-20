@@ -18,6 +18,7 @@ body {
     width: 18em;
     height: 18em;
     cursor: pointer;
+    z-index: 2; /* Ensure .box is above .cards */
 }
 
 .box-tape,
@@ -366,12 +367,22 @@ body {
 
 .cards {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-    position: relative;
+    position: absolute;
     width: 95%;
     height: 90vh;
     margin: auto;
     border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    z-index: 1; /* Ensure the .cards is below .box initially */
 }
+
+/* Thêm transition cho hộp quà và thẻ flash */
+.box, .cards {
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+
+
 
 .card__header {
     background-image: url("./pexels-petricaragea-alexandru-4562937.jpg");
