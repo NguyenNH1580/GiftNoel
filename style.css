@@ -214,6 +214,7 @@ body {
 }
 
 @keyframes bLeft {
+
     from,
     50% {
         transform: rotate(35deg);
@@ -262,6 +263,7 @@ body {
 }
 
 @keyframes box-Bounce {
+
     from,
     50% {
         transform: translateY(0) scale(1, 1);
@@ -282,7 +284,7 @@ body {
     to {
         transform: translateY(0) scale(1, 1);
     }
-} 
+}
 
 @keyframes box-Bounce2 {
 
@@ -293,173 +295,241 @@ body {
 
     62.5% {
         animation-timing-function: ease-in;
-        transform: translateY(45%) scale(1.14,0.95) rotate(0);
+        transform: translateY(45%) scale(1.14, 0.95) rotate(0);
     }
 
     68.75% {
         animation-timing-function: ease-out;
-        transform: translateY(-22.5%) scale(1.05,1.03) rotate(15deg);
+        transform: translateY(-22.5%) scale(1.05, 1.03) rotate(15deg);
     }
 
     75% {
         animation-timing-function: ease-out;
-        transform: translateY(-90%) scale(0.96,1.1) rotate(5deg);
+        transform: translateY(-90%) scale(0.96, 1.1) rotate(5deg);
     }
 
     87.5% {
-        transform: translateY(30%) scale(1.12,0.93) rotate(-3deg);
+        transform: translateY(30%) scale(1.12, 0.93) rotate(-3deg);
     }
 
     to {
-        transform: translateY(0) scale(1,1) rotate(0);
+        transform: translateY(0) scale(1, 1) rotate(0);
     }
 }
 
 @keyframes starRotate1 {
-    from{
+    from {
         transform: scale(0) rotate(0);
     }
-    25%{
+
+    25% {
         animation-timing-function: ease-in-out;
         transform: scale(1) rotate(0.25turn);
     }
+
     50%,
-    to{
+    to {
         transform: scale(0) rotate(0.5turn);
     }
 }
 
 
 @keyframes starRotate2 {
-    from{
+    from {
         transform: scale(0) rotate(0);
     }
-    25%{
+
+    25% {
         animation-timing-function: ease-in-out;
         transform: scale(1) rotate(-0.25turn);
     }
+
     50%,
-    to{
+    to {
         transform: scale(0) rotate(-0.5turn);
     }
 }
+
 /*END: CSS GIFT BOX */
 
 /*START: CSS FLASH CARD*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 
 .cards {
-  background: slategray;
-  position: relative;
-  width: 80%;
-  height: 80vh;
-  margin: auto;
-  border-radius: 5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 5px;
 }
 
 .card__header {
-  background-image: url("./pexels-petricaragea-alexandru-4562937.jpg");
-  background-size: cover;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  padding: 15px; /* Decreased padding for mobile */
-  color: white;
-  display: flex;
-  border-radius: 5px;
-  transition: top 300ms ease-out, left 300ms ease-out, right 300ms ease-out,
-    bottom 300ms ease-out;
+    background-image: url("./pexels-petricaragea-alexandru-4562937.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 25px;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    transition: top 300ms ease-out, left 300ms ease-out, right 300ms ease-out,
+        bottom 300ms ease-out;
 }
 
 .card__title {
-  font-weight: 300;
-  font-size: 1.5rem; /* Decreased font size for mobile */
-  text-transform: uppercase;
-  position: absolute;
-  top: 15px; /* Adjusted top position for mobile */
-  left: 15px; /* Adjusted left position for mobile */
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  border-radius: 3px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .card__more-info,
 .card__less-info {
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 0.5rem 1rem; /* Adjusted padding for mobile */
-  font-weight: 500;
-  border-radius: 3px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-top: auto;
-  border: 0px;
-  transition: transform 500ms ease-in, background 200ms ease-out;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: auto;
+    border: 0px;
+    transition: transform 500ms ease-in, background 200ms ease-out;
 }
 
 .card__less-info:focus,
 .card__less-info:hover,
 .card__more-info:hover,
 .card__more-info:focus {
-  outline: none;
-  background: rgba(0, 0, 0, 0.9);
+    outline: none;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .card__more-info {
-  transition-delay: 300ms; /* Adjusted transition delay for mobile */
+    transition-delay: 500ms, 0ms;
 }
+
 .card__less-info {
-  margin-left: auto;
-  transform: translateX(100%); /* Adjusted translateX for mobile */
+    margin-left: auto;
+    transform: translateX(120%);
 }
 
 .card__content {
-  position: absolute;
-  top: 60%; /* Adjusted top position for mobile */
-  padding: 15px;
-  height: 40%; /* Adjusted height for mobile */
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    top: 73%;
+    padding: 25px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__body {
-  padding-bottom: 10px;
-  color: aliceblue;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.heart {
+    --size: 1.5rem;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    padding-left: 1rem;
+    transition: transform 300ms cubic-bezier(0.38, 0.5, 0.5, 1.5);
+}
+
+.heart__checkbox {
+    transform: rotate(45deg);
+    appearance: none;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -50%;
+    left: 45%;
+    border-radius: 50% 0 0 0;
+    background: rgba(green, 0.5);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.heart__checkbox:focus {
+    outline: none;
+}
+
+.heart__checkbox:checked~.heart__icon {
+    background: red;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+.heart__icon {
+    transform: rotate(45deg);
+    width: var(--size);
+    height: var(--size);
+    background: aliceblue;
+    position: absolute;
+}
+
+.heart__icon::before,
+.heart__icon::after {
+    content: "";
+    display: block;
+    background: inherit;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart__icon::before {
+    top: 0;
+    left: -50%;
+}
+
+.heart__icon::after {
+    top: -50%;
+    left: 0%;
 }
 
 /* Open and close card content*/
 .card--open .card__header {
-  bottom: 25%;
-  left: 15px; /* Adjusted left position for mobile */
-  right: 15px; /* Adjusted right position for mobile */
-  top: 15px; /* Adjusted top position for mobile */
+    bottom: 25%;
+    left: 25px;
+    right: 25px;
+    top: 25px;
 }
-.card--open .card__more-info {
-  transform: translateX(-100%); /* Adjusted translateX for mobile */
-  transition-delay: 0ms;
-}
-.card--open .card__less-info {
-  transform: translateX(0%);
-  transition-delay: 300ms, 0ms;
-}
-/*END: CSS FLASH CARD*/
 
-/* Media Query for Mobile Devices */
-@media only screen and (max-width: 600px) {
-  .cards {
-    width: 90%; /* Adjusted width for mobile */
-  }
+.card--open .card__more-info {
+    transform: translateX(-120%);
+    transition-delay: 0ms;
 }
+
+.card--open .card__less-info {
+    transform: translateX(0%);
+    transition-delay: 300ms, 0ms;
+}
+
+/*END: CSS FLASH CARD*/
