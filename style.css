@@ -387,6 +387,8 @@ body {
 .card__header {
     background-image: url("./Album/MerryChristmas_2.jpg");
     background-size: cover;
+    background-size: cover;
+    background-position: center;
     position: absolute;
     z-index: 1;
     top: 0;
