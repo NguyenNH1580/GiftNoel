@@ -385,7 +385,7 @@ body {
 
 
 .card__header {
-    background-image: url("./Album/MerryChristmas_4.jpg");
+    background-image: url("./Album/MerryChristmas_5.jpg");
     background-size: cover;
     background-size: cover;
     background-position: center;
@@ -411,14 +411,14 @@ body {
     position: absolute;
     top: 25px;
     left: 25px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to right, #7D0A0A, #BF3131, #EAD196,#F3EDC8);
     padding: 10px;
     border-radius: 3px;
 }
 
 .card__more-info,
 .card__less-info {
-    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to right, #7D0A0A, #BF3131, #EAD196,#F3EDC8);
     color: white;
     padding: 0.5rem 1.25rem;
     font-weight: 500;
@@ -436,7 +436,7 @@ body {
 .card__more-info:hover,
 .card__more-info:focus {
     outline: none;
-    background: rgba(0, 0, 0, 0.9);
+    background:linear-gradient(to right, #7D0A0A, #BF3131, #EAD196,#F3EDC8);
 }
 
 .card__more-info {
