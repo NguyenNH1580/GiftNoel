@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const numberOfSnowflakes = 50;
+    const numberOfSnowflakes = 10;
     const snowflakes = [];
 
     for (let i = 0; i < numberOfSnowflakes; i++) {
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 isHeartMode = false;
 
                 // Enable the checkbox after the animation is complete
+
                 replaceWithSnowflakes();
             }, 10000);
         }
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function replaceWithHearts() {
         snowflakes.forEach(snowflake => {
-            snowflake.innerHTML = "&#x1F497;"; // Pink heart icon
+            snowflake.innerHTML = "&#10084"; // Pink heart icon
             snowflake.style.color = "#FF69B4"; // Pink color
         });
     }
