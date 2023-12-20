@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     heartCheckbox.addEventListener('click', function () {
         if (!isHeartMode) {
-            // Disable the checkbox to prevent additional clicks during the animation
-            heartCheckbox.disabled = true;
+            heartCheckbox.style.display = 'none';
 
+            // Disable the checkbox to prevent additional clicks during the animation
             isHeartMode = true;
 
             // Replace snowflakes with pink heart icons
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 isHeartMode = false;
 
-                // Enable the checkbox after the animation is complete
 
                 replaceWithSnowflakes();
             }, 10000);
@@ -69,3 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
