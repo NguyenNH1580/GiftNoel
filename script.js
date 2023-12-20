@@ -28,6 +28,17 @@ cardWrapper.addEventListener('click', e => {
   }
 })
 
+//show button next
+const heart = document.querySelector(".heart");
+heart.addEventListener('click', () => {
+  var arrowButton = document.querySelector('.arrow-button');
+
+  arrowButton.style.opacity = 1;
+  arrowButton.style.transform = "scale(1)";
+
+  playMusic();
+});
+
 
 function playMusic() {
   var audio = new Audio("I-Want-For-Christmas-Is-You.mp3");

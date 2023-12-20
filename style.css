@@ -472,6 +472,7 @@ body {
     height: var(--size);
     position: relative;
     padding-left: 1rem;
+    padding-top: 2rem;
     transition: transform 300ms cubic-bezier(0.38, 0.5, 0.5, 1.5);
 }
 
@@ -530,6 +531,7 @@ body {
     left: 0%;
 }
 
+
 /* Open and close card content*/
 .card--open .card__header {
     bottom: 25%;
@@ -547,6 +549,40 @@ body {
     transform: translateX(0%);
     transition-delay: 300ms, 0ms;
 }
+
+.arrow-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #446A46, #82A284, #E4AEC5,#FFC4DD);;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 52rem;
+    margin-left: 21rem;
+    opacity: 0; /* Initially hidden */
+  }
+
+  .arrow-button:hover {
+    background: linear-gradient(to left, #446A46, #82A284, #E4AEC5,#FFC4DD);;
+  }
+  
+  .arrow-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 8px; 
+    border-color: transparent transparent transparent #fff;
+    margin-right: 8px;
+  }
+
+  /* Thêm transition cho hộp quà và thẻ flash */
+.box, .cards {
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
 
 /*END: CSS FLASH CARD*/
 
