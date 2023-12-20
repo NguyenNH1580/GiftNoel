@@ -368,8 +368,8 @@ body {
 .cards {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
     position: absolute;
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     margin: auto;
     border-radius: 5px;
     opacity: 0; /* Initially hidden */
