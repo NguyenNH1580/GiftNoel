@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function createSnowflake() {
+        var flashCard = document.querySelector('.cards');
+
         const snowflake = document.createElement("div");
         snowflake.className = "snowflake";
         snowflake.innerHTML = "&#10052;"; // You can change this to any snowflake symbol
