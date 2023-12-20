@@ -368,9 +368,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
     position: relative;
     width: 80%;
-    height: 80vh;
+    height: 100vh;
     margin: auto;
     border-radius: 5px;
+    border: 1px solid red;
 }
 
 .card__header {
@@ -395,6 +396,7 @@ body {
     font-weight: 300;
     font-size: 1.8rem;
     text-transform: uppercase;
+    text-align: center;
     position: absolute;
     top: 25px;
     left: 25px;
@@ -442,7 +444,11 @@ body {
     padding: 25px;
     height: 30%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+.card_text{
+    width: 85%;
 }
 
 .card__body {
