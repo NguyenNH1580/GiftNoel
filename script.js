@@ -36,7 +36,6 @@ heart.addEventListener('click', () => {
   arrowButton.style.opacity = 1;
   arrowButton.style.transform = "scale(1)";
 
-  playMusic();
 });
 
 
