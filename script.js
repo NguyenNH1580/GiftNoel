@@ -1,4 +1,6 @@
 // gift box
+let checkPlayMusic = false;
+
 const box = document.querySelector(".box");
 box.addEventListener('click', () => {
     var boxGifts = document.querySelector('.box');
@@ -10,7 +12,9 @@ box.addEventListener('click', () => {
     flashCard.style.opacity = 1;
     flashCard.style.transform = "scale(1)";
 
-    playMusic();
+    if (checkPlayMusic === false){
+      playMusic();
+    }
 });
 
 //flash card
@@ -45,4 +49,5 @@ function playMusic() {
     audio.play();
   }
   audio.loop = true;
+  checkPlayMusic = true;
 }
